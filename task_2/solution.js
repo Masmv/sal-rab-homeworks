@@ -23,14 +23,22 @@ shippingSum = shippingPrice;
 }
 
 function calcDiscount(sum, min, discount) {
+    let productsSum = sum; // сумма в корзине
+    let discountMinSum = min; // минимальная цена для скидки
+    let discountPart = discount; // величина скидки в процентах
 
     // Задание №2.2. Рассчитать скидку
 
-    // создайте переменную discountSum
+    let discountSum    // создайте переменную discountSum
 
-    // если productsSum больше или равно discountMinSum,
-    // то присвойте discountSum значение discountPart процентов от productsSum,
-    // иначе присвойте discountSum значение 0
+    if (productsSum >=  discountMinSum) {    // если productsSum больше или равно discountMinSum,
+        discountSum = discountPart / 100 * productsSum;  // то присвойте discountSum значение discountPart процентов от productsSum,
+        }
+        else {                              // иначе присвойте discountSum значение 0
+            discount = 0;
+        }        
+                             
+                           
 
     // Конец решения задания №2.2.
 
