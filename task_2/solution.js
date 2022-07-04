@@ -35,7 +35,7 @@ function calcDiscount(sum, min, discount) {
         discountSum = discountPart / 100 * productsSum;  // то присвойте discountSum значение discountPart процентов от productsSum,
         }
         else {                              // иначе присвойте discountSum значение 0
-            discount = 0;
+            discountSum = 0;
         }        
                              
                            
