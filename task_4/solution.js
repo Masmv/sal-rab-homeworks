@@ -10,15 +10,10 @@ function parseProducts(json) {
 
 function renderProductsCards(json) {
   clearProducts();
-  products = parseProducts(json);
+  let products = parseProducts(json);
   length = products.length;
 }
 
 for (let i = 0; i < length; i += 1) {
     addProduct(products[i]);
 }
-
-
-
-// Напишите цикл, в котором перебираете все products от 0 до (length - 1)
-// и выполняете addProduct с каждым элементом массива products (передавая элемент массива как аргумент)
