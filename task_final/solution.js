@@ -10,7 +10,7 @@ function sendRequest(name, phone, address, goods, sum) {
         data.goods.push({title: goods[i].title, count: goods[i].count});
 }
     
-    data.order.address = {street: 'ул. ' + address.street, house: 'дом' + address.house, entrance: 'подъезд' + address.entrance, floor: 'этаж' + address.floor, flat: 'кв' + address.flat};
+    data.order.address = {'ул. ' + address.street, 'дом ' + address.house, address.entrance + ' подъезд', address.floor + ' этаж' , 'кв' + address.flat};
     
     //data.order.sum = name + phone + address + goods + sum;
 
