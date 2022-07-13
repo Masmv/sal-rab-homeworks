@@ -10,7 +10,8 @@ function sendRequest(name, phone, address, goods, sum) {
         data.goods.push({title: goods[i].title, count: goods[i].count});
 }
     
-    data.order.address = 'ул. ' + address.street, 'дом ' + address.house, address.entrance + ' подъезд', address.floor + ' этаж' , 'кв' + address.flat;
+    data.order.address = 'ул. ' + street + ', дом ' + house + ', ' + entrance + ' подъезд, ' + floor + ' этаж' + ', кв ' + flat;
+    //'ул. ' + address.street, 'дом ' + address.house, address.entrance + ' подъезд', address.floor + ' этаж' , 'кв' + address.flat;
     //{street, house, entrance, floor, flat}
     //{'ул. ' + address.street, 'дом ' + address.house, address.entrance + ' подъезд', address.floor + ' этаж' , 'кв' + address.flat};
     
