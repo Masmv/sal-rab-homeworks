@@ -1,6 +1,6 @@
 function sendRequest(name, phone, address, goods, sum) {
     let data = {client: name + " " + phone, 
-                order: {address, sum}, 
+                order: {addressNew, sum}, 
                 goods: []
         }
 
